@@ -59,3 +59,5 @@ gem "solidus_core", "~> 3.0"
 gem "solidus_api", "~> 3.0"
 
 gem 'solidus_auth_devise'
+
+gem 'react-rails'
