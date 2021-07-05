@@ -58,6 +58,8 @@ Spree.config do |config|
   #   server: Rails.env.production? ? 'production' : 'test',
   #   test_mode: !Rails.env.production?
   # )
+  config.admin_interface_logo = 'sumus-logo.png'
+  config.logo = 'sumus-logo.png'
 end
 
 Spree::Frontend::Config.configure do |config|
