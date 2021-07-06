@@ -1,0 +1,56 @@
+$grey:#313130;
+$white: #eaeaea;
+$breakpoint-tablet: 860px;
+
+.header {
+  align-items: center;
+  background-color: $grey;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+
+  &__hamburger_icon img {
+    height: 28px;
+    width: 27px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      height: 42px;
+      width: 40px;
+    }
+  }
+
+  &__sumus_logo img {
+    height: 28px;
+    width: 180px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      height: 42px;
+      width: 219px;
+    }
+  }
+
+  &__logo_shop img {
+    height: 41px;
+    width: 32px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      height: 46px;
+      width: 36px;
+    }
+  }
+
+  &__productos, &__nosotros {
+    display: none;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      display: block;
+      color: $white;
+      font-size: 18px;
+      font-family: 'Roboto Mono', monospace;
+      text-transform: uppercase;
+    }
+
+  }
+}
