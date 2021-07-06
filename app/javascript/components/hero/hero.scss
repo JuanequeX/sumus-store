@@ -1,0 +1,79 @@
+$white: #eaeaea;
+$grey: #313130;
+$sand: #efdac6;
+$breakpoint-tablet: 860px;
+
+.hero-container {
+  background-color: $white;
+  height: 91vh;
+  min-height: 500px;
+  padding: 27px 20px 35px;
+  width: 100%;
+
+  &-info {
+    height: 40%;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      height: 35%;
+    }
+
+    &__title {
+      color: $grey;
+      font-family: 'Oswald', sans-serif;
+      font-size: 36px;
+      margin: 0%;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 56px;
+        padding-left: 35px;
+      }
+    }
+
+    &__subtitle {
+      color: $grey;
+      font-family: 'Roboto mono', monospace;
+      font-size: 14px;
+      max-width: 223px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 24px;
+        max-width: 410px;
+        padding-left: 35px;
+      }
+    }
+
+    &__button {
+      background-color: $sand;
+      border-radius: 10px 0px;
+      border: none;
+      color: $grey;
+      font-family: 'Roboto mono', monospace;
+      font-size: 14px;
+      height: 50px;
+      width: 165px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 20px;
+        height: 62px;
+        width: 210px;
+        margin-left: 35px;
+      }
+    }
+  }
+
+  &-image {
+    background-image: url('../../assets/hero-logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60%;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      background-image: url('../../assets/sumus-logo-hero.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      height: 65%;
+    }
+  }
+}
