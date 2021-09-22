@@ -8,8 +8,12 @@ $breakpoint-tablet: 860px;
   display: flex;
   height: 80px;
   justify-content: space-between;
-  padding: 0 60px;
+  padding: 0 20px;
   width: 100%;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: 0 60px;
+  }
 
   &__hamburger_icon img {
     height: 28px;

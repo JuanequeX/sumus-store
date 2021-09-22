@@ -85,14 +85,14 @@ const Footer = () => {
         </div>
       </div>
 
-        <div className='last-information'>
-          <img className='last-information__logo' src={LogoFooter} alt="Logo Footer" />
-          <img className='last-information__logo-desktop' src={LogoFooterDesktop} alt="Logo Footer Desktop" />
-          <p className='last-information__copyright'>
-            &copy; Copyright 2021 SUMUS.</p>
-          <p className='last-information__copyright'>
-            All rights reserved.</p>
-        </div>
+      <div className='last-information'>
+        <img className='last-information__logo' src={LogoFooter} alt="Logo Footer" />
+        <img className='last-information__logo-desktop' src={LogoFooterDesktop} alt="Logo Footer Desktop" />
+        <p className='last-information__copyright'>
+          &copy; Copyright 2021 SUMUS.</p>
+        <p className='last-information__copyright'>
+          All rights reserved.</p>
+      </div>
     </footer>
   );
 }
