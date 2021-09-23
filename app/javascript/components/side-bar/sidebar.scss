@@ -1,0 +1,134 @@
+$grey:#313130;
+$white: #eaeaea;
+$breakpoint-tablet: 860px;
+
+.shadow-background {
+  background-color: $grey;
+  height: 100%;
+  opacity: .5;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+
+  &[data-show="false"] {
+    display: none;
+  }
+
+  &[data-show="true"] {
+    display: block;
+    transition: all 0.5s ease-out;
+  }
+}
+
+.sidebar-container {
+  .side-bar-master-hidden {
+    left: -100%;
+    transition: all 1s ease;
+  }
+
+  .side-bar-master-show {
+    left: 0;
+    overflow-y: hidden;
+    transition: all 1s ease;
+  }
+
+  .side-bar-master {
+    background-color: $grey;
+    height: 100vh;
+    padding: 1rem;
+    position: absolute;
+    top: 5rem;
+    width: 80%;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding: 2rem 2rem 2rem 3.5rem;
+      width: 35%;
+    }
+
+    &__products {
+      display: flex;
+      flex-direction: column;
+      height: 78%;
+      width: 100%;
+    }
+
+    &__container {
+      border-bottom: 0.200rem solid $white;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+      color: $white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      font-weight: normal;
+      margin: 0 0 10px;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 2rem;
+      }
+    }
+
+    &__container-links{
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__links {
+      color: $white;
+      font-family: 'Roboto', monospace;
+      font-weight: 400;
+      margin: .5rem 0;
+      cursor: pointer;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 1.125rem;
+      }
+    }
+
+    &__title-about-us {
+      color: $white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      font-weight: normal;
+      margin: 0 0 10px;
+      padding-top: 1rem;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        font-size: 2rem;
+      }
+    }
+
+    &__container-social-media {
+      border-top-width: revert;
+      border-top: 0.3rem solid white;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top:auto;
+      margin-bottom: 1rem;
+      position: relative;
+      width: 100%;
+    }
+
+    &__instagram {
+      padding-top: 1rem ;
+      width: 1.563rem;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        width: 2.3rem;
+      }
+    }
+
+    &__facebook {
+      padding-top: 1rem ;
+      width: 1.563rem;
+
+      @media screen and (min-width: $breakpoint-tablet) {
+        width: 2.370rem;
+      }
+    }
+  }
+}
