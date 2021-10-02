@@ -1,7 +1,7 @@
 import React from 'react'
 import Tshirt from '../../assets/t-shirt-product.png';
-import Tote from '../../assets/tote-image.png';
-import products from './products.scss';
+import Tote from '../../assets/tote-image.png'
+import products from './products-home.scss';
 
 const Products = () => {
   return (

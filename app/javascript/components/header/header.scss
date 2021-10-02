@@ -16,12 +16,25 @@ $breakpoint-tablet: 860px;
   }
 
   &__hamburger_icon img {
-    height: 28px;
-    width: 27px;
+    cursor: pointer;
+    height: 1.6;
+    transition-duration: .3s ease;
+    width: 1.5rem;
 
     @media screen and (min-width: $breakpoint-tablet) {
-      height: 42px;
-      width: 40px;
+      width: 2.2rem;
+    }
+  }
+
+  &__hamburger-icon-close img {
+    cursor: pointer;
+    height: 1.4rem;
+    transition-duration: .3s ease;
+    width: 1.5rem;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      height: 2rem;
+      width: 2.2rem;
     }
   }
 
@@ -49,10 +62,10 @@ $breakpoint-tablet: 860px;
     display: none;
 
     @media screen and (min-width: $breakpoint-tablet) {
-      display: block;
       color: $white;
-      font-size: 18px;
+      display: block;
       font-family: 'Roboto Mono', monospace;
+      font-size: 18px;
       text-transform: uppercase;
     }
 
