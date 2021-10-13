@@ -4,12 +4,12 @@ $sand: #efdac6;
 $breakpoint-tablet: 860px;
 
 .container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: $white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
 }
 
 .title {
